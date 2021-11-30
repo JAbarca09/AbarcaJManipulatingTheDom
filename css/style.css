@@ -1,0 +1,23 @@
+.appearImg{
+    background-image: url(/images/Space.jpg);
+    background-size: cover;
+    width: 700px;
+    height: 500px 
+}
+
+.bgBlue{
+    background-color: rgb(0, 166, 255);
+}
+
+.GreenTxt{
+    color: green;
+}
+
+.LargerSizeTxt{
+    font-size: 40px;
+}
+
+.FontStyle{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}

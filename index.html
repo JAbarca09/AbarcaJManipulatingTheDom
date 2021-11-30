@@ -1,0 +1,98 @@
+<!-- Jesse Abarca -->
+<!-- Date: 11/21/21 -->
+<!-- Mini Challenge #10 Manipulating the DOM -->
+<!-- Make 10 buttons that do different things by adding javascript to the bootstrap html file! -->
+<!-- Date: 11/29/21 I fixed my add event listeners by using classList.add/classList.remove instead of className="" because we learned a different way of adding/removing classes today!-->
+<!--className overrides the whole entire class!-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/wickedcss.min.css">
+
+    <title>Manipulating the Dom</title>
+  </head>
+  <!-- Because we were only shown how to target the button using e.target.className, I targeted the id of the element then gave it a className! -->
+  <body id="backgroundColor" class="">
+      <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+              <h1 id="Title">This Is The Title!</h1>
+          </div>
+      </div>
+    <div class="row">
+        <div class="col">
+            <button id="btnColor" type="button" class="btn btn-primary">Change Btn Color</button>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col">
+            <p id="pTxt"></p>
+            <button id="btnTxt" type="button" class="btn btn-warning">Text</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mt-5">
+            <button id="boldTitle" type="button" class="btn btn-info">Bold Title</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mt-5">
+             <!-- When the image is applied to the btn the image becomes a large btn!!! -->
+            <button id="imgAppear" type="button" class="btn btn-dark">Image Appears</button>
+            <div id="ShowImg" class=""></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mt-5">
+            <button id="txtAnimation" type="button" class="btn btn-danger">Pulse Animation On Text Below This Btn</button>
+            <p id="pulseTxtAnimation" class="">Pulse animation on text!</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mt-5">
+            <!-- Changes the background of the whole page! -->
+            <button id="bgBlue" type="button" class="btn btn-secondary">Page Background</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mt-5">
+            <button id="colorTxt" type="button" class="btn btn-success">Change Color Text</button>
+            <p id="textColor" class="">My color changes!!!</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mt-5">
+            <button id="sizeTxt" type="button" class="btn btn-warning">Change The Text Size</button>
+            <p id="TextSize" class="">Enlarge The Text!!!</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mt-5">
+            <button id="TextStyle" type="button" class="btn btn-dark">Change The Text Style</button>
+            <p id="StyleTxt" class="">The style of the text will change!</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mt-5">
+            <button id="VidAppear" type="button" class="btn btn-primary">Music</button>
+            <div id="AppearVid" class=""></div>
+        </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./scripts/app.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
